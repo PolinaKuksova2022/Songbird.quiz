@@ -1,4 +1,4 @@
-# [Songbird](https://songbird-pk.netlify.app/)https://songbird-pk.netlify.app/
+# [Songbird](https://songbird-pk.netlify.app/)
 
 Пет-проект от [Rolling Scopes School](https://rs.school/)
 
