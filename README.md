@@ -7,7 +7,7 @@ Songbird - приложение-викторина для распознаван
 ## Установка
 
 ```
-$ git@github.com:PolinaKuksova2022/Songbird.quiz.git
+$ git clone git@github.com:PolinaKuksova2022/Songbird.quiz.git
 $ cd Songbird.quiz
 $ npm i
 $ npm run start 
