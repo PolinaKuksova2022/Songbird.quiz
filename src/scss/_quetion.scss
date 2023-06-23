@@ -1,0 +1,42 @@
+.quiz {
+  &__quetion {
+    height: 100%;
+    margin-top: 20px;
+    //  background-color: rgba(255, 255, 255, 0.6);
+    //  border-radius: 5px;
+    padding: 5px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    &-img {
+      width: 80px;
+      height: 80px;
+      background-image: url(../img/quetion.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    &-done {
+      width: 80px;
+      height: 80px;
+      background-image: url(../img/donelevel.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    &-fail {
+      width: 80px;
+      height: 80px;
+      background-image: url(../img/faillevel.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    &-field {
+      @extend %header;
+      width: 80%;
+      margin-left: 15px;
+    }
+  }
+}

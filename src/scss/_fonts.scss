@@ -1,0 +1,19 @@
+//  подключение шрифтов через плагин
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,regular,500,600,700);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Commissioner:100,200,300,regular,500,600,700,800,900);
+// шрифты по умолчанию
+//$fontFamily: "Open Sans", sans-serif;
+%title {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+}
+%header {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+}
