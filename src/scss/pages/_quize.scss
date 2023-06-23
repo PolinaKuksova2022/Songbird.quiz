@@ -1,0 +1,67 @@
+.main-quiz {
+  flex: 1 1 auto;
+  height: 100%;
+  color: $main-color;
+}
+
+.mask-quiz {
+  background: linear-gradient(0.1turn, #0d3f11, #000000);
+}
+
+.main__inner-quiz {
+  max-width: 1500px; // 1110px ширина основного теста + 15px padding
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  @extend %title;
+}
+
+.main__inner-score {
+  margin-left: auto;
+  padding-right: 35px;
+  display: flex;
+  flex-direction: row;
+  font-weight: 500;
+  justify-content: space-between;
+  &-title {
+    margin-right: 10px;
+  }
+}
+
+.quize {
+  display: flex;
+  &__field {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto;
+    grid-row-gap: 50px;
+    grid-column-gap: 10px;
+    font-weight: 600;
+    font-size: 28px;
+  }
+}
+
+.btn-next {
+  height: 50px;
+  padding: 0 48px;
+  background-color: rgb(249, 146, 1);
+  border: none;
+  border-radius: 40px;
+  color: $main-color;
+  text-align: center;
+  font-size: 24px;
+  line-height: 33px;
+  cursor: pointer;
+}
+.btn-next:disabled {
+  background-color: rgb(66, 65, 64);
+}
+
+.result-answer {
+  position: relative;
+  background-image: url(../img/Subtract.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+}

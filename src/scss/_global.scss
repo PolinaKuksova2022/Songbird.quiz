@@ -1,0 +1,22 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 27px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  overflow-x: hidden; //убрали выплывающее меню по оси их вправо на 1000% и чтобы не было прокрутки по х скрыли прокрутку
+  min-width: 360px;
+  max-width: 1920px;
+}
+
+.wrapper {
+  min-height: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+}

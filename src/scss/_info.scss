@@ -1,0 +1,70 @@
+.info {
+  display: grid;
+  align-content: space-between;
+  grid-template-areas:
+    "img img name name "
+    "img img species species "
+    "player player player player "
+    "description description description description ";
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  gap: 20px;
+  width: 100%;
+  height: 400px;
+  max-width: 600px;
+  height: 100%;
+  min-height: 340px;
+  @extend %header;
+  &__img {
+    grid-area: img;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    max-height: 250px;
+    border-radius: 5%;
+  }
+  &__name {
+    grid-area: name;
+    text-align: center;
+    align-self: center;
+    font-size: 28px;
+    @media (max-width: 740px) {
+      font-size: 24px;
+    }
+    @media (max-width: 640px) {
+      font-size: 14px;
+    }
+  }
+  &__species {
+    grid-area: species;
+    font-size: 16px;
+    text-align: center;
+    align-self: center;
+    @media (max-width: 640px) {
+      font-size: 14px;
+    }
+  }
+  &__description {
+    grid-area: description;
+    font-size: 14px;
+    @media (max-width: 550px) {
+      font-size: 12px;
+    }
+  }
+  &__player {
+    grid-area: player;
+    align-self: center;
+  }
+  &__text {
+    margin-top: 20px;
+    width: 230px;
+    @media (max-width: 640px) {
+      width: 200px;
+      font-size: 14px;
+    }
+    @media (max-width: 430px) {
+      width: 150px;
+      font-size: 13px;
+    }
+  }
+}
